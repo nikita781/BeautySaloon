@@ -1,0 +1,21 @@
+@import "header";
+
+body {
+    background-color: rgb(241, 241, 241);
+    height: 1500px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'main';
+}
+
+@font-face {
+    font-family: "main";
+    src: url(/assets/fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: "light";
+    src: url(/assets/fonts/OpenSans-Light.ttf);
+}

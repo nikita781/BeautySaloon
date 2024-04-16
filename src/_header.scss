@@ -1,0 +1,188 @@
+.header {
+    background-color: rgba(0, 0, 0, 0.068);
+    // padding: 5px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s;
+    &__head {
+        border-bottom: solid 1px #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 30px 5px 30px;
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
+    }
+    &__phone {
+        color: #000;
+        &-container {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+    &__contact {
+        display: flex;
+        gap: 30px;
+        &-callback {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 30px 5px 30px;
+    }
+    &__logo {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        &-name {
+            font-family: 'light';
+            font-size: 35px;
+        }
+    }
+    &__menu {
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
+        ul {
+            display: flex;
+            gap: 20px;
+            li {
+                list-style-type: none;
+                cursor: pointer;
+                padding-bottom: 2px;
+                & {
+                    position: relative;
+                }
+                
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 1px;
+                    background-color: #000;
+                    transition: width 0.3s;
+                }
+                
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &__burger {
+        z-index: 5;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 8px;
+        @media screen and (min-width: 1000px) {
+            display: none;
+        }
+        @media screen and (max-width: 1000px) {
+            display: flex;
+        }
+        span {
+            transition: all 0.3s;
+            height: 1px;
+            background-color: #000000;
+            display: block;
+            width: 24px;
+        }
+    }
+    .burger_active {
+        span:nth-child(1) {
+            transform: translate(6px, -1px) rotate(45deg);
+            transform-origin: left top;
+        }
+        span:nth-child(2) {
+            transform: scale(0);
+        }
+        span:nth-child(3) {
+            transform: translate(-1px, -20px) rotate(-45deg);
+            transform-origin: right bottom;
+        }
+    }
+    &__menu-phone {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #d4d4d4;
+        height: 100%;
+        width: 100%;
+        max-width: 200px;
+        padding: 0 5vw;
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.3);
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 100px;
+        right: -200px;
+        transition: opacity 0.5s, visibility 0s 0.5s, right 0.5s;
+    }
+    .menu_active {
+        z-index: 4;
+        position: fixed;
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+        right: 0;
+        transition: opacity 0.5s, visibility 0s, right 0.5s;
+    }
+    &__small {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &-menu {
+            margin-top: 30px;
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                li {
+                    list-style-type: none;
+                    cursor: pointer;
+                    padding-bottom: 2px;
+                    & {
+                        position: relative;
+                    }
+                    
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        height: 1px;
+                        background-color: #000;
+                        transition: width 0.3s;
+                    }
+                    
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
