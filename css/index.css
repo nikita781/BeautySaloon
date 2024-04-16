@@ -10,6 +10,11 @@
 .header__glush {
   height: 103px;
 }
+@media screen and (max-width: 1000px) {
+  .header__glush {
+    height: 65px;
+  }
+}
 .header__head {
   border-bottom: solid 1px #000;
   display: flex;
