@@ -1,11 +1,14 @@
 .header {
-  background-color: rgba(0, 0, 0, 0.068);
+  background-color: rgba(218, 218, 218, 0.842);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
   transition: top 0.3s;
+}
+.header__glush {
+  height: 103px;
 }
 .header__head {
   border-bottom: solid 1px #000;

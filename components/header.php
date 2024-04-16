@@ -7,6 +7,7 @@
     <title>Салон красоты</title>
 </head>
 <body>
+    <div class="header__glush"></div>
     <div class="header" id="header">
         <div class="header__head">
             <a href="tel:+71234567890" class="header__phone-container">
@@ -70,3 +71,4 @@
             </div>
         </div>
     </div>
+    111
