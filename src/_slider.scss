@@ -1,0 +1,12 @@
+.swiper {
+    height: 400px;
+    &-button-prev {
+        color: pink !important;
+    }
+    &-button-next {
+        color: pink !important;
+    }
+    &-pagination-bullet-active {
+        background: pink !important;
+    }
+}

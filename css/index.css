@@ -193,6 +193,19 @@
   width: 100%;
 }
 
+.swiper {
+  height: 400px;
+}
+.swiper-button-prev {
+  color: pink !important;
+}
+.swiper-button-next {
+  color: pink !important;
+}
+.swiper-pagination-bullet-active {
+  background: pink !important;
+}
+
 body {
   background-color: rgb(241, 241, 241);
 }
