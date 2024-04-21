@@ -1,11 +1,14 @@
 var prevScrollpos = window.pageYOffset;
+var headerHeight = 103; // Высота вашей шапки
+
 window.onscroll = function() {
   if (window.innerWidth > 768) {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
       document.querySelector(".header").style.top = "0";
     } else {
-      document.querySelector(".header").style.top = "-103px";
+      var scrolledPastHeader = currentScrollPos > headerHeight;
+      document.querySelector(".header").style.top = scrolledPastHeader ? "-" + headerHeight + "px" : "0";
     }
     prevScrollpos = currentScrollPos;
   }

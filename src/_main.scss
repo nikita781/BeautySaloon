@@ -1,0 +1,248 @@
+.infoBeauty {
+    margin: 40px 60px;
+    @media screen and (max-width: 700px) {
+        margin: 15px 30px;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &_title {
+        font-size: 40px;
+        color: #8C303A;
+    }
+    &_info {
+        font-size: 20px;
+        color: #8C303A;
+        &-cont {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 75px;
+            @media screen and (max-width: 1000px) {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    }
+}
+.services {
+    margin: 40px 60px;
+    @media screen and (max-width: 700px) {
+        margin: 15px 30px;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &_title {
+        font-size: 40px;
+        color: #8C303A;
+    }
+    &_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        @media screen and (max-width: 1000px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (max-width: 700px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &_item {
+        position: relative;
+        // border: solid 0.5px #8C303A;
+        border-radius: 15px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-decoration: none;
+        overflow: hidden;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: #91454edc;
+            border-radius: 0 0 15px 15px;
+            transition: height 0.3s ease;
+        }
+        &:hover::after {
+            height: 100%;
+        }
+        &:hover {
+            .services_item-name {
+                color: white;
+            }
+        }
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            z-index: 1;
+        }
+        &-name {
+            font-size: 20px;
+            color: #8C303A;
+            z-index: 1;
+        }
+    }
+}
+.advantages {
+    margin: 40px 60px;
+    @media screen and (max-width: 700px) {
+        margin: 15px 30px;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &_title {
+        font-size: 40px;
+        color: #8C303A;
+    }
+    &_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        @media screen and (max-width: 1000px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (max-width: 700px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        img {
+            width: 100px;
+        }
+        p {
+            padding-top: 15px;
+            border-top: 1px solid #000;
+            width: 100%;
+            text-align: center;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+}
+.callback {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to left, #F9B1D7, #F9EAF4);
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+        justify-content: unset;
+    }
+    &-container {
+        padding: 40px 60px;
+        @media screen and (max-width: 700px) {
+            padding: 15px 30px;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        @media screen and (max-width: 1000px) {
+            gap: 15px;
+        }
+    }
+    img {
+        width: 50%;
+        object-fit: contain;
+        @media screen and (max-width: 700px) {
+            width: calc(100% - 120px);
+            padding: 0px 60px;
+        }
+    }
+    &_title {
+        font-size: 40px;
+        color: #8C303A;
+    }
+    &_btn {
+        padding: 5px 15px;
+        background-color: #8C303A;
+        border-radius: 10px;
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+        &-white {
+            color: #000;
+            background-color: #fff;
+            border: solid 0.5px #000000;
+        }
+        &-container {
+            display: flex;
+            gap: 50px;
+            @media screen and (max-width: 1000px) {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    }
+}
+.miniblog {
+    margin: 40px 60px;
+    @media screen and (max-width: 700px) {
+        margin: 15px 30px;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &_title {
+        font-size: 40px;
+        color: #8C303A;
+    }
+    &_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+        @media screen and (max-width: 1200px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @media screen and (max-width: 1000px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (max-width: 700px) {
+            grid-template-columns: 1fr;
+        }
+        &-item {
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            img {
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+            }
+            p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+            &:hover {
+                box-shadow: 0 0 32px #ccc;
+                transition: 0.5s;
+                color: #212121;
+            }
+        }
+        &-info {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            color: #000;
+        }
+    }
+}

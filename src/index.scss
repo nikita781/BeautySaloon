@@ -1,14 +1,22 @@
 @import "header";
 @import "slider";
+@import "main";
+@import "footer";
 
 body {
     background-color: rgb(241, 241, 241);
+    height: 1500px;
 }
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'main';
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1718px;
 }
 
 @font-face {
