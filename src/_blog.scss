@@ -1,0 +1,13 @@
+.blog{
+    margin: 40px 60px;
+    @media screen and (max-width: 700px) {
+        margin: 15px 30px;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &_title {
+        font-size: 40px;
+        color: #8C303A;
+    }
+}

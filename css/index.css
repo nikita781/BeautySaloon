@@ -741,6 +741,22 @@
   flex-direction: column;
 }
 
+.blog {
+  margin: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (max-width: 700px) {
+  .blog {
+    margin: 15px 30px;
+  }
+}
+.blog_title {
+  font-size: 40px;
+  color: #8C303A;
+}
+
 body {
   background-color: rgb(241, 241, 241);
 }

@@ -44,7 +44,7 @@
                         <li><a href="/specialists.php">Специалисты</a></li>
                         <li><a href="/stock.php">Акции</a></li>
                         <li><a href="/contacts.php">Контакты</a></li>
-                        <li>Страница</li>
+                        <li><a href="/blog.php">Блог</a></li>
                         <li>Страница</li>
                     </ul>
                 </div>
@@ -74,7 +74,7 @@
                         <li><a href="/specialists.php">Специалисты</a></li>
                         <li><a href="/stock.php">Акции</a></li>
                         <li><a href="/contacts.php">Контакты</a></li>
-                        <li>Страница</li>
+                        <li><a href="/blog.php">Блог</a></li>
                         <li>Страница</li>
                     </ul>
                 </div>
