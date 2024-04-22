@@ -1,4 +1,4 @@
-<div class="footer">
+<div class="footer container">
     <div class="footer__main">
         <div class="footer__logo">
             <img src="/assets/img/logo.svg" alt="logo">
@@ -25,6 +25,7 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="/js/slider.js"></script>
+<script src="/js/accordion.js"></script>
 <script src="/js/header.js"></script>
 </body>
 </html>
