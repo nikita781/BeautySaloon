@@ -35,10 +35,10 @@
                 </div>
             </div>
             <div class="header__main">
-                <div class="header__logo">
+                <a href="/" class="header__logo">
                     <img src="/assets/img/logo.svg" alt="logo">
                     <p class="header__logo-name">Название</p>
-                </div>
+                </a>
                 <div class="header__menu">
                     <ul>
                         <li><a href="/specialists.php">Специалисты</a></li>

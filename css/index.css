@@ -60,6 +60,8 @@
   display: flex;
   gap: 20px;
   align-items: center;
+  color: #000;
+  text-decoration: none;
 }
 .header__logo-name {
   font-family: "light";
