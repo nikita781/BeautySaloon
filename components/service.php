@@ -39,7 +39,7 @@
                         $str_item = "SELECT * FROM `service_item` WHERE `id_service`='$result[id]'";
                         $run_item = mysqli_query($connect, $str_item);
                         while ($item = mysqli_fetch_array($run_item)) {
-                            echo    '<a href=service.php?id=' . $item['id'] . ' class=services_item>
+                            echo    '<a href=service-item.php?id=' . $item['id'] . ' class=services_item>
                                     <img src=/assets/bd/' . $item['photo'] . ' alt="">
                                     <p class=services_item-name>' . $item['name'] . '</p>
                                     </a>';

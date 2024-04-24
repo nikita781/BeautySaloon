@@ -37,7 +37,7 @@
             <div class="header__main">
                 <a href="/" class="header__logo">
                     <img src="/assets/img/logo.svg" alt="logo">
-                    <p class="header__logo-name">Название</p>
+                    <p class="header__logo-name">BeautySaloon</p>
                 </a>
                 <div class="header__menu">
                     <ul>
@@ -45,7 +45,17 @@
                         <li><a href="/stock.php">Акции</a></li>
                         <li><a href="/contacts.php">Контакты</a></li>
                         <li><a href="/blog.php">Блог</a></li>
-                        <li>Страница</li>
+                        <?php
+                            if ($_SESSION['user']) {
+                                echo "
+                                    <li><a href=/#>Профиль</a></li>
+                                ";
+                            } else {
+                                echo "
+                                    <li><a href=/auvt.php>Войти</a></li>
+                                ";
+                            }
+                        ?>
                     </ul>
                 </div>
                 <div id="burger_button" class="header__burger">

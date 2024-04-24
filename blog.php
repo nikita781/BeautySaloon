@@ -4,5 +4,5 @@
    include 'components/blog.php';
    include 'components/footer.php';
 
-
+   
 ?>
