@@ -15,7 +15,7 @@
     $run_email = mysqli_query($connect, $str_email);
     $user = mysqli_fetch_array($run_email);
 
-    $str_user = "UPDATE `users` SET `name`='$name',`surname`='$surname',`email`='$email',`number`='$phone',`password`='$password',`updated_up`=CURRENT_TIMESTAMP WHERE $user[id]";
+    $str_user = "UPDATE `users` SET `name`='$name',`surname`='$surname',`email`='$email',`number`='$phone',`password`='$password',`updated_up`=CURRENT_TIMESTAMP WHERE `id`='$user[id]'";
     
     if ($add_user) {
         if ($oldpassword == $user['password']) {

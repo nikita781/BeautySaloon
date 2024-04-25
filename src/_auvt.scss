@@ -45,6 +45,9 @@
                 border: solid 0.5px #00000031;
                 font-size: 15px;
             }
+            &-textarea {
+                resize: vertical;
+            }
             p {
                 a {
                     color: #8C303A;

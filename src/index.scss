@@ -9,6 +9,8 @@
 @import "contacts";
 @import "specialist";
 @import "stock";
+@import "adminka";
+@import "work";
 
 body {
     background-color: rgb(241, 241, 241);
@@ -23,6 +25,17 @@ body {
 .container {
     margin: 0 auto;
     max-width: 1718px;
+}
+
+.page_contant {
+    min-height: calc(100vh - 181px);
+    margin-bottom: -181px;
+    padding-bottom: 181px;
+    @media screen and (max-width: 600px) {
+        min-height: calc(100vh - 213px);
+        margin-bottom: -213px;
+        padding-bottom: 213px;
+    }
 }
 
 @font-face {

@@ -15,6 +15,7 @@
     <title>Салон красоты</title>
 </head>
 <body>
+    <div class="page_contant">
     <div class="header__glush"></div>
     <div class="header" id="header">
         <div class="header-container">
@@ -50,6 +51,20 @@
                                 echo "
                                     <li><a href=/profile.php>Профиль</a></li>
                                 ";
+                                $user_email = $_SESSION['user'];
+                                $str_email = "SELECT * FROM `users` WHERE `email`='$user_email'";
+                                $run_email = mysqli_query($connect, $str_email);
+                                $user = mysqli_fetch_array($run_email);
+
+                                if ($user['role'] == 4) {
+                                    echo "
+                                        <li><a href=/adminka.php>Админ-панель</a></li>
+                                    ";
+                                } elseif ($user['role'] == 2) {
+                                    echo "
+                                        <li><a href=/work.php>Работа</a></li>
+                                    ";
+                                }
                             } else {
                                 echo "
                                     <li><a href=/auvt.php>Войти</a></li>
@@ -90,6 +105,16 @@
                                 echo "
                                     <li><a href=/profile.php>Профиль</a></li>
                                 ";
+                                $user_email = $_SESSION['user'];
+                                $str_email = "SELECT * FROM `users` WHERE `email`='$user_email'";
+                                $run_email = mysqli_query($connect, $str_email);
+                                $user = mysqli_fetch_array($run_email);
+
+                                if ($user['role'] == 4) {
+                                    echo "
+                                        <li><a href=/adminka.php>Админ-панель</a></li>
+                                    ";
+                                }
                             } else {
                                 echo "
                                     <li><a href=/auvt.php>Войти</a></li>

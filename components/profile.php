@@ -54,13 +54,19 @@
                         <a href="/controllers/exit.php" class="profile__info-btn-exit">Выйти</a>
                     </div>
                 </div>
-                <div class="service__form-cont">
-                    <div class="service__form-title">
-                        <img src="/assets/img/person.svg" alt="">
-                        <strong>Вы являетесь специалистом?</strong>
+                <?php
+                    if ($user['role'] == 1) {
+                ?>
+                    <div class="service__form-cont">
+                        <div class="service__form-title">
+                            <img src="/assets/img/person.svg" alt="">
+                            <strong>Вы являетесь специалистом?</strong>
+                        </div>
+                        <p>Вы можете <a href="/reg_spec.php">устроиться</a> к нам в дружный коллетив</p>
                     </div>
-                    <p>Вы можете <a href="/auvt.php">устроиться</a> к нам в дружный коллетив</p>
-                </div>
+                <?php
+                    }
+                ?>
             </div>
         </div>
     </div>

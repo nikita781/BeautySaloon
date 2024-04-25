@@ -1,0 +1,91 @@
+.admin {
+    margin: 40px 60px;
+    @media screen and (max-width: 700px) {
+        margin: 15px 30px;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &__title {
+        font-size: 40px;
+        color: #8C303A;
+    }
+    &__cont {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        gap: 50px;
+    }
+    &__menu {
+        background-color: #fff;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        &-item {
+            color: black;
+            text-decoration: none;
+        }
+    }
+    &__subtitle {
+        font-size: 25px;
+        color: #8C303A;
+    }
+    &__contant {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &__table {
+        border: 1px solid #eee;
+        background: #fff;
+        table-layout: fixed;
+        width: 100%;
+        margin-bottom: 20px;
+        &-th {
+            font-weight: bold;
+            padding: 5px;
+            background: #efefef;
+            border: 1px solid #dddddd;
+        }
+        &-td{
+            padding: 5px 10px;
+            border: 1px solid #eee;
+            text-align: left;
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+            &-cont {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+        &-btn {
+            &-green {
+                background-color: green;
+                border-radius: 15px;
+                padding: 10px;
+                color: white;
+                text-decoration: none;
+                text-align: center;
+            }
+            &-red {
+                background-color: red;
+                border-radius: 15px;
+                padding: 10px;
+                color: white;
+                text-decoration: none;
+                text-align: center;
+            }
+        }
+        .tbody tr:nth-child(odd){
+            background: #fff;
+        }
+        .tbody tr:nth-child(even){
+            background: #F7F7F7;
+        }
+    }
+}
