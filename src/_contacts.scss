@@ -1,0 +1,27 @@
+.contact_cont {
+    .contact{
+        margin-top: 3%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .contact-info{
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .contact-map{
+        margin-right: 4%;
+    }
+    .contact-address h2, p{
+        margin-top: 4%;
+    }
+    .contact-tel{
+        margin-top: 4%;
+    }
+    .contact-email{
+        margin-top: 4%;
+    }
+}

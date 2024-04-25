@@ -87,7 +87,7 @@
 
                                                     echo '
                                                     <div class=service__specialist-item>
-                                                        <img src=/assets/bd/valeria.jpg>
+                                                        <img src=/assets/img/'.$staff['photo'].'>
                                                         <div class=service__specialist-info>
                                                             <p class=service__specialist-name>' . $staff['name'] . ' ' . $staff['surname'] . '</p>
                                                             <p class=service__specialist-name>Опыт работы: <strong>' . $experience . ' ' . $years_word . '</strong></p>

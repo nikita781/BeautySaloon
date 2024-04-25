@@ -48,7 +48,7 @@
                         <?php
                             if ($_SESSION['user']) {
                                 echo "
-                                    <li><a href=/#>Профиль</a></li>
+                                    <li><a href=/profile.php>Профиль</a></li>
                                 ";
                             } else {
                                 echo "
@@ -85,7 +85,17 @@
                         <li><a href="/stock.php">Акции</a></li>
                         <li><a href="/contacts.php">Контакты</a></li>
                         <li><a href="/blog.php">Блог</a></li>
-                        <li>Страница</li>
+                        <?php
+                            if ($_SESSION['user']) {
+                                echo "
+                                    <li><a href=/profile.php>Профиль</a></li>
+                                ";
+                            } else {
+                                echo "
+                                    <li><a href=/auvt.php>Войти</a></li>
+                                ";
+                            }
+                        ?>
                     </ul>
                 </div>
             </div>

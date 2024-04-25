@@ -9,7 +9,7 @@
                 $formattedDate = date('j F, Y', strtotime($blog['updated_at']));
                 echo "
                 <a href=# class=miniblog_container-item>
-                    <img src=/assets/bd/".$blog['photo']." alt=>
+                    <img src=/assets/img/".$blog['photo']." alt=>
                     <div class=miniblog_container-info>
                         <h3>".$blog['name']."</h3>
                         <p>".$blog['description']."</p>

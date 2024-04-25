@@ -1,0 +1,114 @@
+.stock_cont {
+    @media(max-width: 1600px) {
+        h1{
+            text-align: center;
+            margin-top: 1%;
+        }
+        .stock{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           margin-top: 2%;
+           
+           
+        }
+        .stock_one{
+            display: flex;
+            width: 50%;
+            margin: 1%;
+            background-color: rgba(218, 218, 218, 0.842);
+            border-radius: 30px;
+        }
+        .img_stock{
+            width: 200px;
+            height: 200px;
+            margin: 2%;
+            border-radius: 30px;
+        }
+        .desc_stock{
+            margin-top: 2%;
+        }
+        .stock-button{
+            background-color: palevioletred;
+            width: 35%;
+            height: 15%;
+            border-radius: 30px;
+            margin-top: 4%;
+            margin-bottom: 4%;
+        }
+        }
+    @media(max-width: 768px) {
+        .stock{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2%;
+           
+           
+        }
+        .stock_one{
+            display: flex;
+            width: 70%;
+            margin: 1%;
+            background-color: rgba(218, 218, 218, 0.842);
+            border-radius: 30px;
+            flex-direction: column;
+            align-items: center;
+        }
+        .img_stock{
+            width: 100px;
+            height: 100px;
+            margin: 2%;
+            border-radius: 30px;
+        }
+        .desc_stock{
+            text-align: center;
+            margin: 2%;
+        }
+        .stock-button{
+            background-color: palevioletred;
+            width: 50%;
+            height: 10%;
+            border-radius: 30px;
+            margin-top: 4%;
+            margin-bottom: 4%;
+        }  
+    }
+    @media all and (max-width: 320px) {
+        .stock{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2%;
+           
+           
+        }
+        .stock_one{
+            display: flex;
+            width: 70%;
+            margin: 1%;
+            background-color: rgba(218, 218, 218, 0.842);
+            border-radius: 30px;
+            flex-direction: column;
+            align-items: center;
+        }
+        .img_stock{
+            width: 50px;
+            height: 50px;
+            margin: 2%;
+            border-radius: 30px;
+        }
+        .desc_stock{
+            text-align: center;
+            margin: 2%;
+        }
+        .stock-button{
+            background-color: palevioletred;
+            width: 50%;
+            height: 10%;
+            border-radius: 30px;
+            margin-top: 4%;
+            margin-bottom: 4%;
+        }  
+    }
+}

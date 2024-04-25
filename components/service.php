@@ -40,7 +40,7 @@
                         $run_item = mysqli_query($connect, $str_item);
                         while ($item = mysqli_fetch_array($run_item)) {
                             echo    '<a href=service-item.php?id=' . $item['id'] . ' class=services_item>
-                                    <img src=/assets/bd/' . $item['photo'] . ' alt="">
+                                    <img src=/assets/img/' . $item['photo'] . ' alt="">
                                     <p class=services_item-name>' . $item['name'] . '</p>
                                     </a>';
                         }
@@ -68,7 +68,7 @@
 
                                 echo '
                                 <div class=service__specialist-item>
-                                    <img src=/assets/bd/valeria.jpg>
+                                    <img src=/assets/img/'.$staff['photo'].'>
                                     <div class=service__specialist-info>
                                         <p class=service__specialist-name>' . $staff['name'] . ' ' . $staff['surname'] . '</p>
                                         <p class=service__specialist-name>Опыт работы: <strong>' . $experience . ' ' . $years_word . '</strong></p>

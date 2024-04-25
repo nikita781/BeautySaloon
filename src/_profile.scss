@@ -1,0 +1,84 @@
+.profile {
+    margin: 40px 60px;
+    @media screen and (max-width: 700px) {
+        margin: 15px 30px;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &__title {
+        font-size: 40px;
+        color: #8C303A;
+    }
+    &__cont {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 50px;
+    }
+    &__record {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        &-item {
+            background-color: #fff;
+            border-radius: 25px;
+            padding: 15px;
+            display: flex;
+            gap: 15px;
+            img {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+            }
+        }
+        &-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 10px;
+        }
+    }
+    &__subtitle {
+        font-size: 25px;
+        color: #8C303A;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        &-cont {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        &-btns {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        &-btn {
+            &-update {
+                padding: 15px;
+                border-radius: 15px;
+                background-color: #8C303A;
+                color: white;
+                text-decoration: none;
+                text-align: center;
+            }
+            &-exit {
+                padding: 15px;
+                border-radius: 15px;
+                background-color: red;
+                color: white;
+                text-decoration: none;
+                text-align: center;
+            }
+        }
+    }
+}
