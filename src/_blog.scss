@@ -10,4 +10,55 @@
         font-size: 40px;
         color: #8C303A;
     }
+    &__single{
+        display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @media screen and (max-width: 700px) {
+        margin: 15px 30px;
+        
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &__info{
+        display: flex;
+        gap: 30px;
+        @media screen and (max-width: 1024px) {
+            flex-direction: column;
+        }
+        
+        &_img{
+            width: 100%;
+            max-width: 850px;
+            max-height: 560px;
+            
+        }
+    &-inf{
+        line-height: 1.7em;
+        text-align: justify;
+
+        @media screen and (max-width: 1024px) {
+            text-align: center;
+    
+    }
+
+    }
+    &__main{
+        text-align: center;
+        
+        &_text{
+            
+            font-weight: 300;
+            
+    
+    line-height: 2em;
+    
+    font-family: "main";
+    color: #8C303A;
+    font-size: 30px;
+    text-align: center;
+        }
+    }
+}
 }

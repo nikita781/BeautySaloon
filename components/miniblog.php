@@ -8,7 +8,7 @@
             while ($blog=mysqli_fetch_array($run_blog)) {
                 $formattedDate = date('j F, Y', strtotime($blog['updated_at']));
                 echo "
-                <a href=# class=miniblog_container-item>
+                <a href=blog_item.php?id=" . $blog['id'] . " class=miniblog_container-item>
                     <img src=/assets/img/".$blog['photo']." alt=>
                     <div class=miniblog_container-info>
                         <h3>".$blog['name']."</h3>
