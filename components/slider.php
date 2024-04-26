@@ -4,10 +4,10 @@
   <div class="swiper-wrapper">
     <!-- Slides -->
     <div class="swiper-slide">
-        <img src="/assets/img/slide-test.png" alt="">
+      <img src="/assets/img/slide.jpg" alt="">
     </div>
     <div class="swiper-slide">
-        <img src="/assets/img/slide-test.png" alt="">
+        <img src="/assets/img/slider1.jpg" alt="">
     </div>
     <div class="swiper-slide">
         <img src="/assets/img/slide-test.png" alt="">

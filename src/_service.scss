@@ -59,6 +59,24 @@
         font-size: 30px;
         color: #8C303A;
     }
+    &__stock {
+        width: calc(100% - 70px);
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 35px;
+        display: flex;
+        gap: 30px;
+        img {
+            width: 150px;
+            height: auto;
+            object-fit: contain;
+        }
+        &-cont {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
     &__form {
         width: calc(100% - 70px);
         background-color: #fff;

@@ -10,8 +10,32 @@
                 <li><a href="/specialists.php">Специалисты</a></li>
                 <li><a href="/stock.php">Акции</a></li>
                 <li><a href="/contacts.php">Контакты</a></li>
-                <li>Страница</li>
-                <li>Страница</li>
+                <li><a href="/blog.php">Блог</a></li>
+                <?php
+                    if ($_SESSION['user']) {
+                        echo "
+                            <li><a href=/profile.php>Профиль</a></li>
+                        ";
+                        $user_email = $_SESSION['user'];
+                        $str_email = "SELECT * FROM `users` WHERE `email`='$user_email'";
+                        $run_email = mysqli_query($connect, $str_email);
+                        $user = mysqli_fetch_array($run_email);
+
+                        if ($user['role'] == 4) {
+                            echo "
+                                <li><a href=/adminka.php>Админ-панель</a></li>
+                            ";
+                        } elseif ($user['role'] == 2) {
+                            echo "
+                                <li><a href=/work.php>Работа</a></li>
+                            ";
+                        }
+                    } else {
+                        echo "
+                            <li><a href=/auvt.php>Войти</a></li>
+                        ";
+                    }
+                ?>
             </ul>
         </div>
     </div>

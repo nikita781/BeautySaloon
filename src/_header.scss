@@ -179,6 +179,10 @@
                     list-style-type: none;
                     cursor: pointer;
                     padding-bottom: 2px;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
                     & {
                         position: relative;
                     }

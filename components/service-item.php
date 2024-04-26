@@ -47,15 +47,32 @@
                                             <li>'.$points['name'].': '.$points['description'].'</li>
                                         ';
                                     }
-                            echo '</ul>
-                            </div>';
+                            echo '</ul>';
+                        }
+                    ?>
+                    <?php
+                        $str_stock = "SELECT * FROM `stock` WHERE `id_services`='$result[id]'";
+                        $run_stock = mysqli_query($connect, $str_stock);
+                        $count_stock = mysqli_num_rows($run_stock);
+                        if ($count_stock != 0) {
+                            $stock = mysqli_fetch_array($run_stock);
+                            echo    '<div class="service__subtitle">Акция</div>
+                                    <div class="service__stock">
+                                        <img src=/assets/img/'.$stock['img'].'>
+                                        <div class="service__stock-cont">
+                                            <p><strong>'.$stock['name_stock'].'</strong></p>
+                                            <p>'.$stock['description'].'</p>
+                                            <p>'.$stock['percent'].'%</p>
+                                            <p>'.$stock['time_action'].'</p>
+                                        </div>
+                                    </div>';
                         }
                     ?>
                 <?php
                     if ($_SESSION['user']) {
                         ?>
-                            <div class="service__form">
-                                <form class="service__form-form" method="POST">
+                            <div id="service__form" class="service__form">
+                                <form action="#service__form" class="service__form-form" method="POST">
                                     <p class="service__form-p">Выберите день записи:</p>
                                     <input class="service__form-input" type="date" name="day" min="<?php echo date('Y-m-d', strtotime('+1 day')); ?>" required>
                                     <?php
@@ -116,7 +133,7 @@
                                             $_SESSION['day']=$day;
                                             $run_of_day = mysqli_query($connect, $str_of_day);
                                             echo "
-                                            <form method=POST class=service__form-form>
+                                            <form action=#service__form method=POST class=service__form-form>
                                             <p class=service__form-p>Выберите время записи:</p>";
                                             echo "<select class=service__form-input name=time style=width:100%; required>";
                                             for ($hour = 8; $hour <= 22; $hour++) {

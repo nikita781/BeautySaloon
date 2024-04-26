@@ -30,19 +30,19 @@
                         <p>Обратный звонок</p>
                     </div>
                     <div class="dialog">
-                    <div class="dialog__content">
-                        <div class="dialog__title-cont">
-                            <div class="dialog__title">Обратный звонок</div>
-                            <img id="closeDialog" src="/assets/img/close.svg" alt="">
+                        <div class="dialog__content">
+                            <div class="dialog__title-cont">
+                                <div class="dialog__title">Обратный звонок</div>
+                                <img id="closeDialog" src="/assets/img/close.svg" alt="">
+                            </div>
+                            <form class="auvt__form" action="/controllers/add_callback.php" method="POST">
+                                <input class="auvt__form-cont-input" type="text" name="name" placeholder="Ваше имя" required>
+                                <input class="auvt__form-cont-input" type="number" name="phone" placeholder="Телефон" required>
+                                <textarea class="auvt__form-cont-input auvt__form-cont-textarea" name="desc" placeholder="Сообщение" required></textarea>
+                                <input class="auvt__form-submit" type="submit" name="add_user" value="Отправить" required>
+                            </form>
                         </div>
-                        <form class="auvt__form" action="/controllers/add_callback.php" method="POST">
-                            <input class="auvt__form-cont-input" type="text" name="name" placeholder="Ваше имя" required>
-                            <input class="auvt__form-cont-input" type="number" name="phone" placeholder="Телефон" required>
-                            <textarea class="auvt__form-cont-input auvt__form-cont-textarea" name="desc" placeholder="Сообщение" required></textarea>
-                            <input class="auvt__form-submit" type="submit" name="add_user" value="Отправить" required>
-                        </form>
                     </div>
-                </div>
                 </div>
             </div>
             <div class="header__main">

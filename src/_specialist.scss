@@ -1,5 +1,6 @@
 .specialist_cont {
-    h1{
+    @media(max-width: 1600px) {
+        h1{
         text-align: center;
     }
     .staff-img{
@@ -36,6 +37,12 @@
         height: 10%;
         border-radius: 30px;
         margin: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
     }
     .staff-info{
         height: 50%;
@@ -47,5 +54,120 @@
         width: 80%;
         text-align: center;
         margin-top: 2%;
+    }
+    }
+    @media(max-width: 768px) {
+        h1{
+        text-align: center;
+    }
+    .staff-img{
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 100%;
+        margin-top: 5%;
+    }
+    .staff_img img {
+        width: initial;
+        
+      }
+    .staff{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .staff-one{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 55%;
+        margin: 2%;
+        background-color: rgba(218, 218, 218, 0.842);
+        border-radius: 30px;
+    }
+    .staff-button{
+        background-color: palevioletred;
+        width: 30%;
+        height: 10%;
+        border-radius: 30px;
+        margin: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+    .staff-info{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .staff-info p{
+        width: 80%;
+        text-align: center;
+        margin-top: 2%;
+    }
+    }
+    @media(max-width: 320px) {
+        h1{
+        text-align: center;
+    }
+    .staff-img{
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 100%;
+        margin-top: 5%;
+    }
+    .staff_img img {
+        width: initial;
+        
+      }
+    .staff{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .staff-one{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        margin: 2%;
+        background-color: rgba(218, 218, 218, 0.842);
+        border-radius: 30px;
+    }
+    .staff-button{
+        background-color: palevioletred;
+        width: 30%;
+        height: 10%;
+        border-radius: 30px;
+        margin: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+    .staff-info{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .staff-info p{
+        width: 80%;
+        text-align: center;
+        margin-top: 2%;
+    }
     }
 }

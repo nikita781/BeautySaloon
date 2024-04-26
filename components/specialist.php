@@ -20,7 +20,7 @@ include_once 'controllers/db.php';
         <h3><?= $out['name']?></h3>
         <p><?= $staff['desc'] ?></p>  
     </div>
-    <button class=staff-button>Записаться</button>
+    <a href="<?php echo '/service.php/?id='.$staff['id_services'].'';?>" class="staff-button">Записаться</a>
     </div>
     
     <?php

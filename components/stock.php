@@ -22,7 +22,7 @@ include_once "controllers/db.php"
         <p><?=$stock['description']?></p>
         <p><?=$stock['time_action']?></p>
     
-        <button class=stock-button>Записаться</button>
+        <a href="<?php echo '/service-item.php/?id='.$stock['id_services'].'';?>" class=stock-button>Записаться</a>
         </div>
         </div>
         <?php
