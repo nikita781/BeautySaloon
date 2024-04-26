@@ -25,14 +25,24 @@
                     <p class="header__phone">+7 (123) 456 78 90</p>
                 </a>
                 <div class="header__contact">
-                    <div class="header__contact-callback">
+                    <div class="header__contact-callback openDialog">
                         <img src="/assets/img/callback.svg" alt="call">
                         <p>Обратный звонок</p>
                     </div>
-                    <div class="header__contact-callback">
-                        <img src="/assets/img/mail.svg" alt="callback">
-                        <p>Напишите нам</p>
+                    <div class="dialog">
+                    <div class="dialog__content">
+                        <div class="dialog__title-cont">
+                            <div class="dialog__title">Обратный звонок</div>
+                            <img id="closeDialog" src="/assets/img/close.svg" alt="">
+                        </div>
+                        <form class="auvt__form" action="/controllers/add_callback.php" method="POST">
+                            <input class="auvt__form-cont-input" type="text" name="name" placeholder="Ваше имя" required>
+                            <input class="auvt__form-cont-input" type="number" name="phone" placeholder="Телефон" required>
+                            <textarea class="auvt__form-cont-input auvt__form-cont-textarea" name="desc" placeholder="Сообщение" required></textarea>
+                            <input class="auvt__form-submit" type="submit" name="add_user" value="Отправить" required>
+                        </form>
                     </div>
+                </div>
                 </div>
             </div>
             <div class="header__main">
@@ -86,13 +96,23 @@
                     <img src="/assets/img/call.svg" alt="call">
                     <p class="header__phone">+7 (123) 456 78 90</p>
                 </a>
-                <div class="header__contact-callback">
+                <div class="header__contact-callback openDialog">
                     <img src="/assets/img/callback.svg" alt="call">
                     <p>Обратный звонок</p>
                 </div>
-                <div class="header__contact-callback">
-                    <img src="/assets/img/mail.svg" alt="callback">
-                    <p>Напишите нам</p>
+                <div class="dialog">
+                    <div class="dialog__content">
+                        <div class="dialog__title-cont">
+                            <div class="dialog__title">Обратный звонок</div>
+                            <img id="closeDialog" src="/assets/img/close.svg" alt="">
+                        </div>
+                        <form class="auvt__form" action="/controllers/add_callback.php" method="POST">
+                            <input class="auvt__form-cont-input" type="text" name="name" placeholder="Ваше имя" required>
+                            <input class="auvt__form-cont-input" type="number" name="phone" placeholder="Телефон" required>
+                            <textarea class="auvt__form-cont-input auvt__form-cont-textarea" name="desc" placeholder="Сообщение" required></textarea>
+                            <input class="auvt__form-submit" type="submit" name="add_user" value="Отправить" required>
+                        </form>
+                    </div>
                 </div>
                 <div class="header__small-menu">
                     <ul>

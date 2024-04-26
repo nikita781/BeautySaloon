@@ -35,18 +35,22 @@
             <div class="service__info">
                 <p class="service__info-inf"><?=$result['description']?></p>
                 <p class="service__info-price"><strong><?=$result['price']?> рублей</strong></p>
-                <div class="service__subtitle">Описание процедуры</div>
-                <ul>
                     <?php
                         $str_points = "SELECT * FROM `procedure_points` WHERE `id_service`='$result[id]'";
                         $run_points = mysqli_query($connect, $str_points);
-                        while ($points = mysqli_fetch_array($run_points)) {
-                            echo '
-                                <li>'.$points['name'].': '.$points['description'].'</li>
-                            ';
+                        $count_points = mysqli_num_rows($run_points);
+                        if ($count_points != 0) {
+                            echo '<div class="service__subtitle">Описание процедуры</div>
+                                    <ul>';
+                                    while ($points = mysqli_fetch_array($run_points)) {
+                                        echo '
+                                            <li>'.$points['name'].': '.$points['description'].'</li>
+                                        ';
+                                    }
+                            echo '</ul>
+                            </div>';
                         }
                     ?>
-                </ul>
                 <?php
                     if ($_SESSION['user']) {
                         ?>

@@ -14,6 +14,10 @@
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 50px;
+        @media screen and (max-width: 700px) {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
     }
     &__record {
         display: flex;
@@ -51,6 +55,11 @@
         &-cont {
             display: flex;
             justify-content: space-between;
+            @media screen and (max-width: 800px) {
+                justify-content: unset;
+                flex-direction: column;
+                gap: 30px;
+            }
         }
         &-contact {
             display: flex;
@@ -61,6 +70,9 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            @media screen and (max-width: 800px) {
+                flex-direction: row;
+            }
         }
         &-btn {
             &-update {

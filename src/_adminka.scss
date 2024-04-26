@@ -10,10 +10,21 @@
         font-size: 40px;
         color: #8C303A;
     }
+    &__error {
+        padding: 15px;
+        border: solid 1px red;
+        border-radius: 15px;
+        text-align: center;
+        color: red;
+        font-size: 15px;
+    }
     &__cont {
         display: grid;
         grid-template-columns: 1fr 4fr;
         gap: 50px;
+        @media screen and (max-width: 900px) {
+            grid-template-columns: 1fr;
+        }
     }
     &__menu {
         background-color: #fff;
@@ -35,13 +46,10 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
-    }
+    }   
     &__table {
         border: 1px solid #eee;
         background: #fff;
-        table-layout: fixed;
-        width: 100%;
-        margin-bottom: 20px;
         &-th {
             font-weight: bold;
             padding: 5px;
@@ -53,7 +61,7 @@
             border: 1px solid #eee;
             text-align: left;
             img {
-                width: 100%;
+                width: 150px;
                 height: auto;
                 object-fit: contain;
             }
@@ -87,5 +95,16 @@
         .tbody tr:nth-child(even){
             background: #F7F7F7;
         }
+    }
+    
+    &__green {
+        padding: 15px;
+        background-color: green;
+        color: #fff;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        width: fit-content;
+        cursor: pointer;
     }
 }
